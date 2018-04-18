@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HEADLINES</title>
+  <link rel="stylesheet" href="./css/app.css"/>
+  <link rel="stylesheet" href="./css/Toast.min.css"/>
+  <link href="./css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+<body>
+  <section class="topbar">
+    <h3 class="app-title">HEADLINES</h3>
+  </section>
+
+  <section class="home">
+    <div class="filter-area grid-box">
+      <div class="container">
+        <form>
+          <div class="row">
+            <div class="col-50-a">
+              <label>Filter by Country</label>
+              <select id="countries">
+                <option value=null>Select a country</option>
+              </select>
+            </div>
+            <div class="col-50-b">
+              <label>Filter by Sources</label>
+              <select id="sources">
+                <option value=null>Select a news source</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <br/>
+    <div class="headlines grid-box" id="headlines">
+
+    </div>
+  </section>
+</body>
+
+<script src="js/idb.js"></script>
+<script src="js/main.js"></script>
+<script src="js/mainController.js"></script>
+<script src="js/http.js"></script>
+<script src="js/countries.js"></script>
+<script src="js/Toast.min.js"></script>
+</html>
